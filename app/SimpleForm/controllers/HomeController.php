@@ -1,7 +1,7 @@
 <?php
-class HomeController extends Controller {
+class HomeController extends DatabaseDao {
 	public function run () {
-		Logger::add("hi dan");
+		
 		return $this->runController('/SiteWrapper',array('body'=>$this->getView()));
 	}
 }
