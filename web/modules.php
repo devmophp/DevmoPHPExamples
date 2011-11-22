@@ -7,4 +7,4 @@ Devmo::setDebug(true);
 Devmo::setAppPath('../app/Modules');
 Devmo::setHomeController('/module1/index');
 //	do it!
-Devmo::run();
+echo Devmo::run();

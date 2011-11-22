@@ -6,4 +6,4 @@ require(DEVMO_DIR."/Devmo.php");
 Devmo::setDebug(true);
 Devmo::setAppPath('../app/SimpleForm');
 //	do it!
-Devmo::run();
+echo Devmo::run();
