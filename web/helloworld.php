@@ -2,9 +2,10 @@
 //  define framework constants and load
 require("../../DevmoPHP/Devmo.php");
 //  initialize applications
-Devmo::addAppNamespace('helloworld','../app/helloworld',true);
-Devmo::setHomeController('helloworld.first.controllers.home');
+Devmo::addAppPath('helloworld','../app/helloworld',true);
 Devmo::setRequestedController(Devmo::getServer('PATH_INFO'));
-Devmo::setDebug(true);
+Devmo::setHomeController('helloworld.first.controllers.home');
+Devmo::setPageNotFoundController('helloworld.controllers.PageNotFound');
+Devmo::setDebug(false);
 //	do it!
 echo Devmo::run();
