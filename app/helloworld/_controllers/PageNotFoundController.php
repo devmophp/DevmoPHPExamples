@@ -1,7 +1,7 @@
 <?php
 namespace helloworld\controllers;
 
-class PageNotFound extends \helloworld\wrappers\controllers\SiteWrapper {
+class PageNotFoundController extends \helloworld\wrappers\controllers\SiteWrapperController {
 	public function run () {
 		return $this->addWrapper($this->getView());
 	}
