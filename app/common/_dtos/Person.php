@@ -1,5 +1,5 @@
 <?php
 namespace common\dtos;
-class Person extends \Devmo\dtos\Dto {
+class Person extends \devmo\dtos\Dto {
 	
 }

@@ -4,7 +4,7 @@
 <? if ($this->people) : ?>
 <table>
 	<tr>
-		<td colspan="3">People</td>
+		<td colspan="3">People - <?=$this->date?></td>
 	</tr>
 	<tr>
 		<th>id</th>
