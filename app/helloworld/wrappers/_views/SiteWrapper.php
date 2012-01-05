@@ -32,5 +32,6 @@
 	<body>
 		<div class="navigation"><?=$this->navigation?></div>
 		<div class="content"><?=$this->content?></div>
+		<?=$this->poweredby?>
 	</body>
 </html>
