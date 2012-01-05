@@ -3,7 +3,7 @@
 		<title>Hellow World!</title>
 	</head>
 	<body>
-		<p>this is the site wrapper</p>
-		<p><?=$this->getToken('content')?></p>
+		<p><?=$this->navigation?></p>
+		<p><?=$this->content?></p>
 	</body>
 </html>
