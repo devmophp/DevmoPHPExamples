@@ -1,25 +1,10 @@
 <html>
 	<head>
 		<title>Hellow World!</title>
-		<style>
+		<style type="text/css">
 			body {
 				background: #C3E4FE;
 				margin: 10%;
-			}
-			div.navigation {
-				background: #0071BD;
-				margin: 5px auto;
-				padding: 10px;
-				font: bold 18px arial;
-				color: white;
-			}
-			div.navigation a {
-				color: white;
-				text-decoration: none;
-				margin: 0 25px;
-			}
-			div.navigation a:hover {
-				color: #C0C0C0;
 			}
 			div.content {
 				background: white;
@@ -30,7 +15,7 @@
 		</style>
 	</head>
 	<body>
-		<div class="navigation"><?=$this->navigation?></div>
+		<?=$this->navigation?>
 		<div class="content"><?=$this->content?></div>
 		<?=$this->poweredby?>
 	</body>
