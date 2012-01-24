@@ -1,13 +1,17 @@
 <?php
-//  define framework constants and load
-require("../../DevmoPHP/Devmo.php");
+require("../../DevmoPHP/init.php");
+// uses
+use \Devmo;
+use \devmo\libs\Config;
+// init
+Config::setDebug(true);
 // setup paths
-Devmo::addNamespace('helloworld','../app/helloworld',true);
-Devmo::addNamespace('common','../app/common');
+Config::addNamespacePathMapping('helloworld','../app/helloworld');
+Config::addNamespacePathMapping('common','../app/common');
 // setup controllers
-Devmo::setHomeController('helloworld.home.controllers.Index');
-Devmo::setPageNotFoundController('helloworld.controllers.PageNotFound');
-Devmo::setRequest($_SERVER['PATH_INFO']);
-Devmo::setDebug(true);
+Config::setDefaultNamespace('helloworld');
+Config::setDefaultController('helloworld.home.controllers.Index');
+Config::setPageNotFoundController('helloworld.controllers.PageNotFound');
+Config::setErrorLog(realpath("../log")."/{$_SERVER['HTTP_HOST']}.log");
 //	do it!
 echo Devmo::run();
