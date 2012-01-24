@@ -1,5 +1,5 @@
 <?php
-require("../../DevmoPHP/init.php");
+require("../../DevmoPHP/Devmo.php");
 // uses
 use \Devmo;
 use \devmo\libs\Config;
