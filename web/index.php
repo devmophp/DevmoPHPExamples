@@ -11,7 +11,7 @@ Config::addNamespacePathMapping('common','../app/common');
 // setup controllers
 Config::setDefaultNamespace('helloworld');
 Config::setDefaultController('helloworld.home.controllers.Index');
-Config::setPageNotFoundController('helloworld.controllers.PageNotFound');
+Config::setRequestNotFoundController('helloworld.controllers.PageNotFound');
 Config::setErrorLog(realpath("../log")."/{$_SERVER['HTTP_HOST']}.log");
 //	do it!
 echo Devmo::run();
