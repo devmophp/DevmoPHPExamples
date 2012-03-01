@@ -1,0 +1,3 @@
+[submodule "devmo"]
+	path = devmo
+	url = git://github.com/devmophp/DevmoPHP.git
